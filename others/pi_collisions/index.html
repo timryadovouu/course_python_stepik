@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script defer src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Блоки и пи</title>
+    <style>
+        #canvas {
+            border: solid 15px orange;
+        }
+        .text {
+            max-width: 600px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .container {
+            text-align: center;
+        }
+        #canvas {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Симуляция сталкивающихся блоков</h1>
+        <canvas id="canvas" width="700" height="500" ></canvas>
+        <br/>
+        введите m1  <input id="weight1" value="1" type="number"/>
+        <br/>
+        введите m2  <input id="weight2" value="1" type="number"/>
+        <br/>
+        введите скорость  <input id="delay" value="1" type="number"/>
+        <br/>
+        <button onClick="reset()">поехали! или enter</button>
+      </div>
+</body>
+</html>
